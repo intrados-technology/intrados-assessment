@@ -6,7 +6,7 @@
 'use strict';
 
 // ── Google Sheets integration endpoint (replace with your URL) ──
-const SCRIPT_URL = "PASTE_GOOGLE_APPS_SCRIPT_URL_HERE";
+const SCRIPT_URL = "https://docs.google.com/spreadsheets/d/1Ep0ESBJb-QxzBfN2oxIAH0RFJOPvCsNb4NpvmyWOfDA/edit?usp=sharing";
 
 // ── Multi-Tab Protection ────────────────────────────────────────
 // Each tab gets a unique ID. When an assessment starts, that ID is
