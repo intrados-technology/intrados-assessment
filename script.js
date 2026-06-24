@@ -6,7 +6,7 @@
 'use strict';
 
 // ── Google Sheets integration endpoint (replace with your URL) ──
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwpOhWJH7KTNWtz2Rea2UgliuM6B8MDPdKzSl0YShxOcMP36AnZED8NeV62wCs9YhWJdw/exec";
+const SCRIPT_URL = "PASTE_GOOGLE_APPS_SCRIPT_URL_HERE";
 
 // ── Multi-Tab Protection ────────────────────────────────────────
 // Each tab gets a unique ID. When an assessment starts, that ID is
@@ -64,7 +64,7 @@ const state = {
   candidate: {},       // Registration data
   answers:   {},       // { questionIndex: selectedOptionIndex }
   currentQ:  0,        // 0-based current question index
-  timerSecs: 30 * 60, // 30 minutes in seconds
+  timerSecs: 45 * 60, // 45 minutes in seconds
   timerRef:  null,     // setInterval reference
   submitted: false     // Guard against double-submission
 };
@@ -363,10 +363,10 @@ function calculateScores() {
 
   var totalScore = empScore + emotScore + attachScore;
   var recommendation =
-    totalScore >= 136 ? 'Exceptional' :
+    totalScore >= 140 ? 'Exceptional' :
     totalScore >= 120 ? 'Strong Hire' :
-    totalScore >= 104 ? 'Hire'        :
-    totalScore >= 88  ? 'Borderline'  : 'Reject';
+    totalScore >= 100 ? 'Hire'        :
+    totalScore >= 80  ? 'Borderline'  : 'Reject';
 
   var year = new Date().getFullYear();
   var seq  = String(Date.now() % 9999 + 1).padStart(4, '0');
