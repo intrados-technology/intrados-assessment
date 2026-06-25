@@ -1,12 +1,12 @@
 /* ============================================================
-   INTRADOS DESIGN STUDIO – Candidate Assessment Portal
+   INTRADOS DESIGN STUDIO – Test 1: General Assessment
    script.js – Complete Application Logic
    ============================================================ */
 
 'use strict';
 
 // ── Google Sheets integration endpoint (replace with your URL) ──
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwpOhWJH7KTNWtz2Rea2UgliuM6B8MDPdKzSl0YShxOcMP36AnZED8NeV62wCs9YhWJdw/exec";
+const SCRIPT_URL = "PASTE_GOOGLE_APPS_SCRIPT_URL_HERE";
 
 // ── Multi-Tab Protection ────────────────────────────────────────
 // Each tab gets a unique ID. When an assessment starts, that ID is
